@@ -1,0 +1,11 @@
+<div class="container">
+  <h3>Forms</h3>
+  <div>
+    <p-autoComplete
+      [(ngModel)]="selectedItem"
+      [suggestions]="suggestions"
+      (completeMethod)="search($event)"
+    />
+  </div>
+  <app-calender />
+</div>

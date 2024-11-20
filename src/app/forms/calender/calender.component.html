@@ -1,0 +1,17 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+  <h2>Calender</h2>
+  <p-floatLabel>
+    <p-calendar
+      formControlName="date1"
+      [showIcon]="true"
+      [iconDisplay]="'input'"
+      [showOnFocus]="false"
+      dateFormat="dd.M.yy"
+      selectionMode="range"
+      inputId="birth_date"
+    />
+    <label for="birth_date">Birth Date</label>
+  </p-floatLabel>
+  <p-calendar formControlName="date" dateFormat="dd.MMM.yy" variant="filled" />
+  <app-button label="Submit" />
+</form>
